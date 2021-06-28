@@ -35,15 +35,19 @@ body
     .header__container
         padding-top: 2.5rem 
         .header__container_nav
-            display: flex
-            flex-direction: row
-            flex-wrap: nowrap
-            justify-content: space-between
-            color: $white
-            font-family: 'Lexend', sans-serif
-            font-weight: 400
-            font-size: 1.5rem
-            line-height: 1.875rem
+            nav
+                display: flex
+                flex-direction: row
+                flex-wrap: nowrap
+                justify-content: space-between
+                color: $white
+                font-family: 'Lexend', sans-serif
+                font-weight: 400
+                font-size: 1.5rem
+                line-height: 1.875rem
+                a
+                    text-decoration: none
+                    color: $white
         .header__container_input
             padding: 2.5rem 0 2.5rem 0
             span
@@ -71,7 +75,6 @@ body
         border-radius: 0.313rem
         box-shadow: 0 0 0.6875rem 0.0625rem rgba(0,0,0,0.3)
         margin-top: 2.5rem
-        transition: 1s !important
         .main__card__header
             display: flex
             flex-direction: row
@@ -107,7 +110,5 @@ body
                 font-size: 1.125rem
                 line-height: 2rem
                 padding: 0 1.25rem 1.563rem 1.25rem
-    .main__card:hover
-        transform: scale(101%) !important
 
 

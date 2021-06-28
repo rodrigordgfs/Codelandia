@@ -32,7 +32,7 @@ body {
 .header .header__container {
   padding-top: 2.5rem;
 }
-.header .header__container .header__container_nav {
+.header .header__container .header__container_nav nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -42,6 +42,10 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.875rem;
+}
+.header .header__container .header__container_nav nav a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .header .header__container .header__container_input {
   padding: 2.5rem 0 2.5rem 0;
@@ -75,7 +79,6 @@ body {
   border-radius: 0.313rem;
   box-shadow: 0 0 0.6875rem 0.0625rem rgba(0, 0, 0, 0.3);
   margin-top: 2.5rem;
-  transition: 1s !important;
 }
 #main .main__card .main__card__header {
   display: flex;
@@ -115,9 +118,6 @@ body {
   font-size: 1.125rem;
   line-height: 2rem;
   padding: 0 1.25rem 1.563rem 1.25rem;
-}
-#main .main__card:hover {
-  transform: scale(101%) !important;
 }
 
 /*# sourceMappingURL=style.css.map */
