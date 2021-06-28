@@ -32,7 +32,7 @@ body {
 .header .header__container {
   padding-top: 2.5rem;
 }
-.header .header__container .header__container_nav nav {
+.header .header__container .header__container_nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
