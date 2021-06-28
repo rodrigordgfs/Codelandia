@@ -50,15 +50,23 @@ body
                     color: $white
         .header__container_input
             padding: 2.5rem 0 2.5rem 0
-            span
+            .header__container_input_icon_search
                 position: absolute
                 margin: 0.95rem 1rem
                 color: $white
+            .header__container_input_icon_clear
+                position: absolute
+                margin: 0.95rem 0px 0.95rem -2.5rem
+                color: $white
+                cursor: pointer
+                transition: 0.2s
+            .header__container_input_icon_clear:hover
+                color: $blue-dark
             input
                 background: rgba(255, 255, 255, 0.2)
                 color: $white
                 outline: 0
-                padding: 1rem 1rem 1rem 3rem
+                padding: 1rem 3rem 1rem 3rem
                 border: none
                 border-radius: 0.313rem
                 width: 100%

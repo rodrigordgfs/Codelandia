@@ -1,5 +1,7 @@
 let posts = [];
 
+let search = document.getElementById("search");
+
 async function getAPIData() {
   try {
     const response = await fetch(
@@ -11,8 +13,8 @@ async function getAPIData() {
   }
 }
 
-function buildList() {
-  for (const post of posts) {
+function buildList(data) {
+  for (const post of data) {
     let main = document.getElementById("main");
 
     let description = document.createElement("p");
@@ -64,8 +66,37 @@ function buildList() {
 getAPIData()
   .then((data) => {
     posts = data;
-    buildList();
+    buildList(posts);
   })
   .catch((error) => {
     console.error(error);
   });
+
+function clearSearch() {
+  if (search.value) {
+    search.value = null;
+    search.focus();
+    let main = document.getElementById("main");
+    main.innerHTML = null;
+    buildList(posts);
+  }
+}
+
+function searchPost() {
+  if (search.value.length >= 3) {
+    const searchPost = posts.filter((post) => {
+      return String(post.title).includes(search.value);
+    });
+    if (searchPost.length > 0) {
+      let main = document.getElementById("main");
+      main.innerHTML = null;
+      buildList(searchPost);
+    }
+  }
+}
+
+search.addEventListener("keyup", ({ key }) => {
+  if (key === "Enter") {
+    searchPost();
+  }
+});

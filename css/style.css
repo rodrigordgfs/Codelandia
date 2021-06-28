@@ -50,16 +50,26 @@ body {
 .header .header__container .header__container_input {
   padding: 2.5rem 0 2.5rem 0;
 }
-.header .header__container .header__container_input span {
+.header .header__container .header__container_input .header__container_input_icon_search {
   position: absolute;
   margin: 0.95rem 1rem;
   color: #FFFFFF;
+}
+.header .header__container .header__container_input .header__container_input_icon_clear {
+  position: absolute;
+  margin: 0.95rem 0px 0.95rem -2.5rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.header .header__container .header__container_input .header__container_input_icon_clear:hover {
+  color: #574AE8;
 }
 .header .header__container .header__container_input input {
   background: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
   outline: 0;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
   border: none;
   border-radius: 0.313rem;
   width: 100%;
