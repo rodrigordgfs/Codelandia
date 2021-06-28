@@ -1,7 +1,5 @@
 # Codelândia
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/rodrigordgfs/README-template?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/rodrigordgfs/README-template?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/rodrigordgfs/README-template?style=for-the-badge)
@@ -22,8 +20,6 @@ Para usar Codelândia, siga estas etapas:
 1. Clone o repositório: `git clone https://github.com/rodrigordgfs/Codelandia.git`.
 2. Entre no repositório: `cd codelandia`.
 3. Duplo clique no arquivo `index.html`.
-
-Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus!
 
 
 ## 🤝 Colaboradores
