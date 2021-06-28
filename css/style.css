@@ -54,34 +54,39 @@ body {
   line-height: 1.25rem;
 }
 
-.main {
+#main {
   padding: 1.563rem 0 1.563rem 0;
 }
-.main .main__card {
+#main .main__card {
   background-color: #FFFFFF;
   border-radius: 0.313rem;
   box-shadow: 0px 0px 11px 1px rgba(0, 0, 0, 0.3);
   margin-top: 3.125rem;
 }
-.main .main__card .main__card__header {
+#main .main__card .main__card__header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 1.25rem 1.25rem 0 1.25rem;
 }
-.main .main__card .main__card__header .main__card__header_text {
+#main .main__card .main__card__header .main__card__header_text {
   font-family: "Lexend", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: #B6B6B6;
 }
-.main .main__card .main__card__header .main__card__header_icon {
+#main .main__card .main__card__header .main__card__header_icon {
   text-align: right;
   color: #574AE8;
   cursor: pointer;
+  transition: 0.2s;
 }
-.main .main__card .main__card__title p {
+#main .main__card .main__card__header .main__card__header_icon:hover {
+  color: #3EA1DB;
+  transform: scale(130%);
+}
+#main .main__card .main__card__title p {
   font-family: "Lexend", sans-serif;
   font-weight: 500;
   color: #313131;
@@ -89,7 +94,7 @@ body {
   line-height: 2rem;
   padding: 1.25rem 1.25rem 0.5rem 1.25rem;
 }
-.main .main__card .main__card__description p {
+#main .main__card .main__card__description p {
   color: #B6B6B6;
   font-family: "Lexend", sans-serif;
   font-weight: 400;
