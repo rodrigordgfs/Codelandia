@@ -8,7 +8,9 @@
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/rodrigordgfs/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/rodrigordgfs/README-template?style=for-the-badge)
 
-<img style="text-align: center" src="https://media.giphy.com/media/qMF4kjvBoSMry9UpfK/giphy.gif" alt="GIF do projeto">
+<div style="text-align:center">
+    <img style="text-align: center" src="https://media.giphy.com/media/qMF4kjvBoSMry9UpfK/giphy.gif" alt="GIF do projeto">
+</div>
 
 > Este projeto foi feito atravéz de um desafio do canal do discord [Codelândia](https://discord.com/invite/QevDJqCzaY)
 
