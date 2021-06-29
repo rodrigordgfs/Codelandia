@@ -22,8 +22,9 @@
   background-color: #574AE8;
 }
 
-body {
+html {
   background-color: #F3F5F5;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -129,6 +130,23 @@ body {
   font-size: 1.125rem;
   line-height: 2rem;
   padding: 0 1.25rem 1.563rem 1.25rem;
+}
+
+#back_to_top {
+  position: fixed;
+  bottom: 0.625rem;
+  right: 0.625rem;
+  padding: 1rem 1.2rem;
+  background-color: #3EA1DB;
+  color: #FFFFFF;
+  border-radius: 0.625rem;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+#back_to_top:hover {
+  background-color: #574AE8;
+  transform: scale(105%);
 }
 
 /*# sourceMappingURL=style.css.map */

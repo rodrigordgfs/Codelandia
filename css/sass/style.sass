@@ -1,13 +1,5 @@
 @use 'base'
 
-base.$blue-dark: #574AE8
-base.$light-gray: #F3F5F5
-base.$white: #FFFFFF
-base.$black: #000000
-base.$title: #313131
-base.$text: #B6B6B6
-$blue: #3EA1DB
-
 $gradient: linear-gradient(90deg, base.$blue-dark 0%, base.$blue 100%)
 
 ::-moz-selection
@@ -29,8 +21,9 @@ $gradient: linear-gradient(90deg, base.$blue-dark 0%, base.$blue 100%)
 ::-webkit-scrollbar-thumb
     background-color: base.$blue-dark
 
-body
+html
     background-color: base.$light-gray
+    scroll-behavior: smooth
 
 .header
     background-image: $gradient
@@ -122,4 +115,16 @@ body
                 line-height: 2rem
                 padding: 0 1.25rem 1.563rem 1.25rem
 
-
+#back_to_top
+    position: fixed
+    bottom: 0.625rem
+    right: 0.625rem
+    padding: 1rem 1.2rem
+    background-color: base.$blue
+    color: base.$white
+    border-radius: 0.625rem
+    transition: 0.2s
+    text-decoration: none
+#back_to_top:hover
+    background-color: base.$blue-dark
+    transform: scale(105%)
