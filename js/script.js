@@ -1,6 +1,7 @@
 let posts = [];
 
 let search = document.getElementById("search");
+let backToTop = document.getElementById("back_to_top");
 
 async function getAPIData() {
   try {
@@ -83,20 +84,41 @@ function clearSearch() {
 }
 
 function searchPost() {
-  if (search.value.length >= 3) {
-    const searchPost = posts.filter((post) => {
-      return String(post.title).includes(search.value);
-    });
-    if (searchPost.length > 0) {
-      let main = document.getElementById("main");
-      main.innerHTML = null;
-      buildList(searchPost);
-    }
+  const searchPost = posts.filter((post) => {
+    return String(post.title)
+      .toLowerCase()
+      .includes(String(search.value).toLowerCase());
+  });
+  if (searchPost.length > 0) {
+    let main = document.getElementById("main");
+    main.innerHTML = null;
+    buildList(searchPost);
   }
 }
 
+// Seach posts on press enter
 search.addEventListener("keyup", ({ key }) => {
   if (key === "Enter") {
     searchPost();
   }
+});
+
+// Show/Hide Back to top button
+window.addEventListener("scroll", () => {
+  if (
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
+  ) {
+    backToTop.classList.remove("animate__fadeOutDown");
+    backToTop.classList.add("animate__animated", "animate__fadeInUp");
+    backToTop.style.display = "block";
+  } else {
+    backToTop.classList.remove("animate__fadeInUp");
+    backToTop.classList.add("animate__fadeOutDown");
+  }
+});
+
+backToTop.addEventListener("click", () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });

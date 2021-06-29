@@ -44,7 +44,7 @@ html {
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
-.header .header__container .header__container_nav nav a {
+.header .header__container .header__container_nav a {
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -133,6 +133,8 @@ html {
 }
 
 #back_to_top {
+  display: none;
+  cursor: pointer;
   position: fixed;
   bottom: 0.625rem;
   right: 0.625rem;
@@ -142,6 +144,7 @@ html {
   border-radius: 0.625rem;
   transition: 0.2s;
   text-decoration: none;
+  z-index: 99;
 }
 
 #back_to_top:hover {

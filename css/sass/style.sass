@@ -39,10 +39,9 @@ html
             font-weight: 400
             font-size: 1.5rem
             line-height: 1.875rem
-            nav
-                a
-                    text-decoration: none
-                    color: base.$white
+            a
+                text-decoration: none
+                color: base.$white
         .header__container_input
             padding: 2.5rem 0 2.5rem 0
             .header__container_input_icon_search
@@ -116,6 +115,8 @@ html
                 padding: 0 1.25rem 1.563rem 1.25rem
 
 #back_to_top
+    display: none
+    cursor: pointer
     position: fixed
     bottom: 0.625rem
     right: 0.625rem
@@ -125,6 +126,8 @@ html
     border-radius: 0.625rem
     transition: 0.2s
     text-decoration: none
+    z-index: 99
 #back_to_top:hover
     background-color: base.$blue-dark
     transform: scale(105%)
+    
