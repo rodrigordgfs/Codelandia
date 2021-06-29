@@ -50,7 +50,7 @@ function buildList(data) {
     main_card.classList.add(
       "main__card",
       "animate__animated",
-      "animate__backInLeft"
+      "animate__fadeIn"
     );
     main_card.appendChild(main_card_header);
     main_card.appendChild(main_card_title);
