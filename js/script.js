@@ -62,6 +62,21 @@ function buildList(data) {
 
     main.appendChild(container);
   }
+
+  favorite_actions()
+}
+
+function favorite_actions() {
+  favorite_buttons = document.querySelectorAll('.main__card__header_icon')
+  favorite_buttons.forEach(item => {
+    item.addEventListener("click", () => {
+      if (item.innerHTML === 'favorite') {
+        item.innerHTML = 'favorite_border'
+      } else {
+        item.innerHTML = 'favorite'
+      }
+    })
+  });
 }
 
 getAPIData()
