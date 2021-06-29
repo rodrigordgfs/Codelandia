@@ -1,14 +1,11 @@
 # Codelândia
 
-![GitHub repo size](https://img.shields.io/github/repo-size/rodrigordgfs/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/rodrigordgfs/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/rodrigordgfs/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/rodrigordgfs/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/rodrigordgfs/README-template?style=for-the-badge)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-<div style="text-align:center">
-    <img style="text-align: center" src="https://media.giphy.com/media/qMF4kjvBoSMry9UpfK/giphy.gif" alt="GIF do projeto">
-</div>
+![GIF](https://media.giphy.com/media/qMF4kjvBoSMry9UpfK/giphy.gif)
 
 > Este projeto foi feito atravéz de um desafio do canal do discord [Codelândia](https://discord.com/invite/QevDJqCzaY)
 
