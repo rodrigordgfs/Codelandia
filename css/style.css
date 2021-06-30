@@ -110,6 +110,7 @@ html {
   color: #574AE8;
   cursor: pointer;
   transition: 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
 #main .main__card .main__card__header .main__card__header_icon:hover {
   color: #3EA1DB;
