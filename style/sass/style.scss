@@ -16,8 +16,8 @@ html {
 
 html[data-theme="dark"] {
   background-color: var(--background);
-  --primary: #121212;
-  --secondary: #242424;
+  --primary: #0e0e0e;
+  --secondary: #222222;
   --background: #272727;
   --white: #858585;
   --title: #ffffff;
@@ -204,7 +204,7 @@ $gradient: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
     text-indent: -9999px;
     width: 55px;
     height: 30px;
-    background: var(--primary);
+    background: var(--title);
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -217,7 +217,7 @@ $gradient: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
 
   label:after {
     content: "";
-    background: #fff;
+    background: var(--card);
     width: 20px;
     height: 20px;
     -webkit-border-radius: 50%;
@@ -230,7 +230,7 @@ $gradient: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
   }
 
   input:checked + label {
-    background: var(--background);
+    background: var(--text);
   }
 
   input:checked + label:after {
